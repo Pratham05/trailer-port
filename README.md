@@ -6,7 +6,7 @@ This is a React SPA to view trailers for movies and tv shows. It provides the fo
 
 
 ## Built With
-React js - Router, Context API(State Management)
+React js - Router, Context API(State Management)<br/>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -36,4 +36,5 @@ Your app is ready to be deployed!
 ## Author
 * Pratham Bathla
 
+## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
