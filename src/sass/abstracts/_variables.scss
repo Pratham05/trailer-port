@@ -1,11 +1,20 @@
 
-
+$test: red;
 // CSS Custom properties to be used over the entire app
 :root {
-    --color-primary: #18242F;
-    --color-primary-dark: #101820;
-    --color-primary-light: #101820;
-    --color-secondary: #FEE715;
-    --color-white: #f0f0f0;
-    --color-black: #222;
-}
+    $test: red;
+    --color-primary: rgb(24, 36, 47);
+    --color-primary-rgb: 24, 36, 47;
+    --color-primary-dark: rgb(16, 24, 32);
+    --color-primary-dark-rgb: 16, 24, 32;
+    --color-primary-light: rgb(35, 49, 60);
+    --color-primary-light-rgb: 35, 49, 60;
+    --color-secondary: rgb(254, 231, 21);
+    --color-secondary-rgb: 254, 231, 21;
+    --color-white: rgb(240, 240, 240);
+    --color-white-rgb: 240, 240, 240;
+    --color-black: rgb(34, 34, 34);
+    --color-black-rgb: 34, 34, 34;
+};
+
+

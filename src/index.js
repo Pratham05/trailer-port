@@ -4,10 +4,14 @@ import ReactDOM from 'react-dom';
 import './sass/main.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+// Routing for the app
+import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
