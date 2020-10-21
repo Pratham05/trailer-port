@@ -1,49 +1,60 @@
+@import "../../../sass/abstracts/variables";
 @import "../../../sass/abstracts/mixins";
 
 .Navbar {
     @include u-container;
-    background-color: var(--color-primary-light);
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: rgba($color-primary-light, .6);
+    backdrop-filter: blur(1rem);
     display: flex;
     align-items: center;
     height: 8rem;
-    box-shadow: 0 1rem 3rem rgba(var(--color-primary-light-rgb), .1);
-    //padding: 0 10rem;
+    box-shadow: 0 .2rem 3rem rgba($color-primary-light, .2);
 
-    &__logo {
+
+    &__Logo {
         align-self: flex-start;
         width: 15rem;
     }
     
-    &__list {
+    &__List {
         list-style-type: none;
         display: flex;
     }
 
-    &__link {
-        &,
-        &:visited,
-        &:link {
-            margin-left: 7rem;
-            text-transform: uppercase;
-            color: var(--color-secondary);
-            text-decoration: none;
-            font-weight: 300;
-            font-size: 2rem;
-            padding: .2rem 0;
-            border-bottom: 1px solid transparent;
-            transition: all .2s;
+    &__Link {
+
+        &:first-child {
+            // Distance from the image
+            margin-left: 4rem;
+        }
+        margin-left: 3.2rem;
+        text-transform: uppercase;
+        color: $color-secondary-light;
+        text-decoration: none;
+        font-weight: 300;
+        letter-spacing: .4rem;
+        font-size: 1.6rem;
+        padding: .2rem 0;
+        border-bottom: 1px solid transparent;
+        transition: all .2s;
+        
+        &:hover {
+            color: $color-secondary;
         }
 
-        &:hover,
-        &:active {
-            border-bottom: 1px solid var(--color-secondary);
+        &__IsActive {
+            color: $color-secondary;
+            border-bottom: 1px solid $color-secondary;
         }
     }
 
     &__SearchBar {
         margin-left: auto;
-        font-size: 2rem;
+        font-size: 1.4rem;
         width: 30rem;
-        height: 4.5rem;
     }
 }
+

@@ -7,21 +7,26 @@ import SearchBar from '../../SearchBar/SearchBar';
 const Navbar = () => {
     return (
         <nav className={styles.Navbar}>
-            <div className={styles.Navbar__logo}>
+            <div className={styles.Navbar__Logo}>
                 <Logo />
             </div>
-            <ul className={styles.Navbar__list}>
-                <li className={styles.Navbar__list__item}>
-                    <NavLink to="" className={styles.Navbar__link}>Home</NavLink>
+            <ul className={styles.Navbar__List}>
+                <li className={styles.Navbar__List__Item}>
+                    <NavLink to="/" className={styles.Navbar__Link} 
+                    exact // Added to make sure the link doesnt show the active css by taking prefix from '/'
+                    activeClassName={styles.Navbar__Link__IsActive} >Home</NavLink>
                 </li>
-                <li className={styles.Navbar__list__item}>
-                    <NavLink to="" className={styles.Navbar__link}>Movies</NavLink>
+                <li className={styles.Navbar__List__Item}>
+                    <NavLink to="/movies" className={styles.Navbar__Link}
+                    activeClassName={styles.Navbar__Link__IsActive}>Movies</NavLink>
                 </li>
-                <li className={styles.Navbar__list__item}>
-                    <NavLink to="" className={styles.Navbar__link}>TV Shows</NavLink>
+                <li className={styles.Navbar__List__Item}>
+                    <NavLink to="/tvshows" className={styles.Navbar__Link}
+                    activeClassName={styles.Navbar__Link__IsActive}>TV Shows</NavLink>
                 </li>
-                <li className={styles.Navbar__list__item}>
-                    <NavLink to="" className={styles.Navbar__link}>About</NavLink>
+                <li className={styles.Navbar__List__Item}>
+                    <NavLink to="/about" className={styles.Navbar__Link}
+                    activeClassName={styles.Navbar__Link__IsActive}>About</NavLink>
                 </li>        
             </ul>
             <div className={styles.Navbar__SearchBar}>

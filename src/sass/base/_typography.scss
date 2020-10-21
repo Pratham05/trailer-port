@@ -12,7 +12,7 @@ body {
 }
 
 p {
-    color: var(--color-secondary);
+    color: $color-secondary;
     &:not(:last-child) {
         margin-bottom: 3rem;
     }

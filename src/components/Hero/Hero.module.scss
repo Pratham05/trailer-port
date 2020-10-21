@@ -1,0 +1,32 @@
+@import "../../sass/abstracts/variables";
+.Hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient($color-primary-light, $color-primary-dark);
+
+    &__TextPrimary {
+        display: inline-block;
+        color: $color-secondary-light;
+        letter-spacing: .2rem;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+
+    &__SearchBar {
+        margin-top: 3rem;
+        width: 50vw;
+        font-size: 2rem;
+    }
+
+    &__TextSecondary {
+        color: $color-secondary-light;
+        font-size: 1.6rem;
+        letter-spacing: .2rem;
+        margin-top: 3rem;
+    }
+}
